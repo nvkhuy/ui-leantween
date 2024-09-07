@@ -18,7 +18,7 @@ public class UiTween : MonoBehaviour {
     private void Start()
     {
         LeanTween.rotateAround(colorWheel, Vector3.forward, -360f, 10f).setLoopClamp();
-        LeanTween.scale(levelSuccess, new Vector3(1.5f, 1.5f, 1.5f), 2f).setDelay(0.5f)
+        LeanTween.scale(levelSuccess, new Vector3(1.5f, 1.5f, 1.5f), 2f).setDelay(0f)
             .setEase(LeanTweenType.easeOutElastic).setOnComplete(showLevelSuccessOnComplete);
         LeanTween.moveLocal(levelSuccess, new Vector3(0f, 650f, 0f), 0.7f).setDelay(2f)
             .setEase(LeanTweenType.easeInCubic);
